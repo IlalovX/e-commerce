@@ -1,0 +1,115 @@
+.products {
+	margin: 30px 0;
+	padding: 0 100px;
+	font-family: "Inter", sans-serif;
+	h1 {
+		margin-bottom: 20px;
+	}
+	.btns {
+		margin-bottom: 20px;
+		display: flex;
+		align-items: center;
+		position: relative;
+		.filter_btn {
+			background-color: #e52e6b;
+			color: white;
+		}
+		.filter_btn:hover {
+			background-color: #e52e6ba0;
+		}
+		.more {
+			position: absolute;
+			right: 0;
+			top: 0;
+			background-color: #e52e6b;
+			color: white;
+		}
+		.more:hover {
+			background-color: #e52e6ba0;
+			color: white;
+		}
+		:global {
+			.ant-radio-group {
+				:where(.css-dev-only-do-not-override-pr0fja).ant-radio-button-wrapper-checked:not(
+						.ant-radio-button-wrapper-disabled
+					) {
+					font-size: 16px;
+					color: white;
+					background-color: #e52e6ba0;
+					border: none;
+					outline: none;
+				}
+				:where(.css-dev-only-do-not-override-pr0fja).ant-radio-button-wrapper-checked:not(
+						.ant-radio-button-wrapper-disabled
+					)::before {
+					background-color: white;
+				}
+			}
+		}
+	}
+	.container {
+		margin-bottom: 100px;
+	}
+
+	.container {
+		.card {
+			font-family: "Inter", sans-serif;
+			position: relative;
+			padding: 8px;
+			border-radius: 5px;
+			height: 300px;
+			outline: 2px solid rgb(186, 186, 180);
+			border: 2px solid rgb(186, 186, 180);
+			.like {
+				cursor: pointer;
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				border: none;
+				outline: none;
+				svg {
+					width: 25px;
+					height: 25px;
+				}
+			}
+			.like:hover {
+				color: red;
+			}
+			.price {
+				font-size: 20px;
+				font-weight: bold;
+				position: absolute;
+				bottom: 40px;
+			}
+			.name {
+				font-size: 16px;
+				font-weight: bolder;
+			}
+			.rating {
+				font-size: 16px;
+				font-weight: bold;
+			}
+			.btn {
+				position: absolute;
+				left: 80px;
+				bottom: 10px;
+				background-color: #e52e6b;
+				color: white;
+			}
+			.btn:hover {
+				color: white;
+				background-color: #e52e6ba0;
+			}
+
+			.imgBtn {
+				display: block;
+				img {
+					width: 110px;
+					height: 110px;
+					margin: 0 auto;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}

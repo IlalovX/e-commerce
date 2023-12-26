@@ -1,0 +1,33 @@
+.account {
+	a {
+		display: flex;
+		align-items: center;
+		color: black;
+	}
+	.drop_link {
+		border: 1px solid #dcdde0;
+		padding: 8px;
+		border-radius: 80px;
+	}
+}
+.avatar {
+	text-align: center;
+	.user {
+		font-size: 12px;
+		font-family: "Roboto", sans-serif;
+	}
+
+	:global {
+		.ant-btn {
+			margin: 10px auto;
+			display: block;
+			background-color: #e52e6b;
+			color: white;
+		}
+		.ant-btn:hover {
+			outline: none;
+			border: none;
+			background-color: #e66e96;
+		}
+	}
+}

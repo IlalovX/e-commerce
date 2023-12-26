@@ -1,0 +1,36 @@
+.main {
+	font-family: "Inter", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 100px;
+	background-attachment: scroll;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: linear-gradient(
+		90deg,
+		rgb(153, 0, 153) -4.29%,
+		rgb(187, 0, 136) 26.34%,
+		rgb(217, 0, 109) 54.6%,
+		rgb(242, 0, 97) 102.3%
+	);
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	a {
+		font-size: 14px;
+		color: white;
+		padding: 10px;
+	}
+	a:hover {
+		background-image: linear-gradient(
+			90deg,
+			rgb(202, 99, 202) -4.29%,
+			rgb(227, 97, 192) 26.34%,
+			rgb(182, 107, 145) 54.6%,
+			rgb(224, 120, 162) 102.3%
+		);
+	}
+	.promo {
+		border-right: 2px solid #f7f8fa;
+		padding-right: 20px;
+	}
+}

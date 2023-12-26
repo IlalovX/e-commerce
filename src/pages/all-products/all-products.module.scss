@@ -1,0 +1,98 @@
+.all_products {
+	padding: 30px 100px;
+	h1 {
+		margin-bottom: 30px;
+	}
+	.loading {
+		margin: 20px 0;
+		color: grey;
+		font-size: 24px;
+		text-align: center;
+	}
+	.loading p::after {
+		display: inline-block;
+		animation: dotty steps(1, end) 1s infinite;
+		content: "";
+	}
+	.scroll_container {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 20px;
+		.card {
+			font-family: "Inter", sans-serif;
+			position: relative;
+			padding: 8px;
+			border-radius: 5px;
+			height: 300px;
+			outline: 2px solid rgb(186, 186, 180);
+			border: 2px solid rgb(186, 186, 180);
+			.like {
+				cursor: pointer;
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				border: none;
+				outline: none;
+				svg {
+					width: 25px;
+					height: 25px;
+				}
+			}
+			.like:hover {
+				color: red;
+			}
+			.price {
+				font-size: 20px;
+				font-weight: bold;
+				position: absolute;
+				bottom: 40px;
+			}
+			.name {
+				font-size: 16px;
+				font-weight: bolder;
+			}
+			.rating {
+				font-size: 16px;
+				font-weight: bold;
+			}
+			.btn {
+				position: absolute;
+				left: 80px;
+				bottom: 5px;
+				background-color: #e52e6b;
+				color: white;
+			}
+			.btn:hover {
+				color: white;
+				background-color: #e52e6ba0;
+			}
+
+			.imgBtn {
+				display: block;
+				img {
+					width: 110px;
+					height: 110px;
+					margin: 0 auto;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+@keyframes dotty {
+	0% {
+		content: "";
+	}
+	25% {
+		content: ".";
+	}
+	50% {
+		content: "..";
+	}
+	75% {
+		content: "...";
+	}
+	100% {
+		content: "";
+	}
+}

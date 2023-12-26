@@ -1,0 +1,58 @@
+.main {
+	padding: 50px 100px;
+	font-family: "Inter", sans-serif;
+	.text {
+		.text_header {
+			margin-bottom: 20px;
+			h2 {
+				font-size: 30px;
+				line-height: 39px;
+			}
+			.cartAdd {
+				background-color: rgb(188, 18, 66);
+				padding: 10px 5px;
+				margin: 0;
+				line-height: 0;
+				span {
+					color: #fff;
+					font-size: 14px;
+				}
+			}
+		}
+		width: 40%;
+		.amount {
+			opacity: 0.5;
+		}
+		.monthPrice {
+			width: 200px;
+			opacity: 0.8;
+			margin-bottom: 10px;
+		}
+
+		hr {
+			margin: 10px 0;
+			opacity: 0.5;
+		}
+		.description {
+			font-size: 16px;
+			line-height: 25px;
+		}
+		.surety {
+			font-weight: bold;
+		}
+	}
+	.flex {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.body {
+		margin-top: 20px;
+		align-items: flex-start;
+		img {
+			width: 400px;
+			height: 440px;
+			margin: 0 auto;
+		}
+	}
+}

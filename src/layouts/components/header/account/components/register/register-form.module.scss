@@ -1,0 +1,35 @@
+.form {
+	margin: 20px;
+	.error {
+		font-size: 20px;
+		display: block;
+		margin: 10px;
+	}
+	:global {
+		.ant-row {
+			line-height: 1;
+			display: block;
+			.ant-col {
+				display: block;
+				text-align: left;
+				margin: 0;
+				.ant-form-item-control-input-content {
+					display: flex;
+					text-align: center;
+					.ant-btn {
+						display: block;
+						background-color: #e52e6b;
+						color: white;
+						margin-right: 20px;
+					}
+					.ant-btn:hover {
+						color: white;
+						background-color: #e52e6ba0;
+						outline: none;
+						border: none;
+					}
+				}
+			}
+		}
+	}
+}

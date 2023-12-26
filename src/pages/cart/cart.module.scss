@@ -1,0 +1,11 @@
+.main {
+	margin: 50px 100px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	.alert {
+		position: absolute;
+		top: -200px;
+		left: calc(50% - 100px);
+	}
+}

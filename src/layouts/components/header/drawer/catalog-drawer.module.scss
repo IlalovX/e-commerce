@@ -1,0 +1,99 @@
+.headDrawer {
+	font-family: "Arial", sans-serif;
+	.drawerBtnActive {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.circle {
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background-color: #e52e6b;
+			display: grid;
+			grid-template-columns: 4px 4px;
+			grid-template-rows: 4px 4px;
+			gap: 1px;
+			padding: 5px;
+			margin-right: 5px;
+			.box {
+				width: 4px;
+				height: 4px;
+				margin: 0 auto;
+				background-color: white;
+			}
+		}
+	}
+	.drawerBtnClose {
+		display: flex;
+		background-color: grey;
+		.drawer__close {
+			margin-right: 5px;
+			font-size: 15px;
+		}
+	}
+}
+.drawer {
+	margin-top: 92px;
+	:global {
+		.ant-drawer-body {
+			display: flex;
+		}
+	}
+	.categories {
+		height: 100%;
+		border-right: 1px solid black;
+		padding-right: 10px;
+		.category {
+			width: 100%;
+			display: block;
+			text-align: left;
+			font-size: 16px;
+			line-height: 1.6;
+			font-weight: 600;
+			margin-bottom: 5px;
+		}
+		.categoryActive {
+			text-align: left;
+			width: 100%;
+			display: block;
+			font-size: 16px;
+			font-weight: 600;
+			color: red;
+			background-color: #e3acbf;
+			margin-bottom: 5px;
+		}
+		.category:hover {
+			color: red;
+			background-color: #e3acbf;
+		}
+	}
+	.subCategories {
+		margin-left: 50px;
+		line-height: 2;
+		font-size: 15px;
+		.subCategory {
+			display: block;
+			margin-bottom: 5px;
+			color: black;
+			font-weight: 600;
+		}
+		.subCategory:hover {
+			color: red;
+			background-color: #e3acbf;
+		}
+	}
+}
+.drawer_container {
+	:global {
+		.ant-drawer .ant-drawer-mask {
+			position: absolute;
+			inset: 0;
+			z-index: 1000;
+			background: rgba(0, 0, 0, 0.45);
+			pointer-events: auto;
+			top: 92px;
+			bottom: calc(-2 * 100vh);
+		}
+	}
+}

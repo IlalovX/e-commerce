@@ -1,0 +1,121 @@
+.OrderList {
+	padding: 20px 100px;
+	font-family: "Inter", sans-serif;
+	.voidText {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 30px;
+		margin: 200px 0;
+		color: grey;
+	}
+	.card {
+		position: relative;
+		width: 100%;
+		padding: 20px;
+		box-shadow:
+			0 4px 16px rgba(6, 10, 13, 0.06),
+			0 1px 4px rgba(6, 10, 13, 0.08);
+		border-radius: 12px;
+		margin-bottom: 20px;
+		.table_details {
+			font-family: "Roboto", sans-serif;
+			width: 80%;
+			display: flex;
+			justify-content: space-between;
+			p {
+				font-size: 18px;
+				span {
+					font-weight: bold;
+				}
+			}
+		}
+		.header_list {
+			font-size: 25px;
+			margin: 30px 0;
+			padding: 10px 0;
+			text-align: center;
+			border-top: 1px solid rgba(6, 10, 13, 0.08);
+			border-bottom: 1px solid rgba(6, 10, 13, 0.08);
+		}
+		.table_list {
+			width: 100%;
+			.item {
+				width: 100%;
+				.item_btns {
+					text-align: right;
+				}
+				:global {
+					.ant-btn {
+						background-color: #e52e6b;
+						color: white;
+					}
+					.ant-btn:hover {
+						outline: none;
+						border: none;
+						background-color: #e66e96;
+					}
+				}
+			}
+		}
+		.drop_container {
+			text-align: right;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			.dropdown {
+				.drop {
+					cursor: pointer;
+					display: block;
+					.dot {
+						display: block;
+						width: 5px;
+						height: 5px;
+						border-radius: 50%;
+						background-color: black;
+						margin: 0;
+						margin-bottom: 2px;
+					}
+				}
+			}
+		}
+	}
+	.modal_btn {
+		padding: 0;
+		span {
+			padding: 0;
+		}
+	}
+}
+.modal_body {
+	position: relative;
+	height: 550px;
+	.rules {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		white-space: nowrap;
+		font-size: 17px;
+		font-weight: bold;
+		color: red;
+	}
+	h1 {
+		margin-bottom: 20px;
+	}
+	label {
+		p {
+			font-size: 16px;
+			line-height: 20px;
+			margin-bottom: 5px;
+		}
+		input,
+		.data,
+		textarea {
+			margin-bottom: 10px;
+		}
+	}
+	.btn {
+		display: block;
+	}
+}

@@ -1,0 +1,75 @@
+.main {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 auto;
+	width: 80%;
+	font-family: "Inter", sans-serif;
+	margin-bottom: 20px;
+	position: relative;
+	margin-left: 100px;
+	img {
+		position: absolute;
+		left: -100px;
+		top: 0;
+		width: 60px;
+		height: 90px;
+		margin-right: 50px;
+	}
+	.container {
+		display: flex;
+		width: 600px;
+		position: relative;
+		.text {
+			h1 {
+				font-size: 16px;
+				line-height: 22px;
+				width: 290px;
+			}
+		}
+		.btns {
+			width: 100px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.count {
+				font-size: 24px;
+				margin: 20px 0;
+			}
+			button {
+				background-color: white;
+				width: 30px;
+				height: 30px;
+				font-size: 20px;
+				border-radius: 5px;
+				border: 1px solid grey;
+			}
+		}
+		.price {
+			position: absolute;
+			align-self: center;
+			text-align: right;
+			right: 0;
+			top: 0;
+			span {
+				color: grey;
+				text-decoration: line-through;
+				font-size: 18px;
+			}
+			p {
+				font-size: 24px;
+			}
+		}
+	}
+	.fetchBtns {
+		text-align: right;
+		.btn_delete {
+			margin-right: 10px;
+		}
+		button {
+			padding: 0;
+		}
+		hr {
+			margin: 20px 0;
+		}
+	}
+}

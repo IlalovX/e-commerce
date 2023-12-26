@@ -1,0 +1,30 @@
+.button {
+	width: 100%;
+	background-color: #e52e6b;
+	color: white;
+	margin: 15px 0;
+}
+.button:hover {
+	border: none;
+	outline: none;
+	background-color: #e52e6bb3;
+	color: white;
+}
+.drawer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Inter", sans-serif;
+	img {
+		width: 550px;
+		height: 400px;
+	}
+}
+:global {
+	.ant-drawe-mask {
+		display: none;
+	}
+	.ant-drawer-wrapper-content {
+		height: 100%;
+	}
+}

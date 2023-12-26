@@ -1,0 +1,27 @@
+.search_container {
+	width: 900px;
+
+	:global {
+		.ant-select {
+			width: 100%;
+		}
+	}
+}
+.card {
+	display: flex;
+	align-items: center;
+	img {
+		width: 34px;
+		height: 34px;
+		margin-right: 10px;
+	}
+	div {
+		width: 100%;
+		p {
+			font-size: 16px;
+		}
+		span {
+			color: grey;
+		}
+	}
+}

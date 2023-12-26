@@ -1,0 +1,41 @@
+.home__offers {
+	padding: 0 100px;
+	font-family: "Inter", sans-serif;
+	h1 {
+		margin-bottom: 30px;
+	}
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.card {
+			border-radius: 10px;
+			width: 200px;
+			padding: 10px;
+			background-color: rgba(244, 232, 232, 0.652);
+			text-align: center;
+			p {
+				text-align: left;
+				font-size: 16px;
+			}
+			span {
+				text-align: left;
+				font-size: 14px;
+				color: gray;
+				display: block;
+			}
+			img {
+				width: 120px;
+				height: 120px;
+				margin: 0 auto;
+			}
+		}
+		.card:hover {
+			outline: 1px solid sandybrown;
+			p,
+			span {
+				color: sandybrown;
+			}
+		}
+	}
+}

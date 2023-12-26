@@ -1,0 +1,62 @@
+.filter_sub_cards {
+	padding: 20px;
+	width: 350px;
+	margin: 0 auto;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-family: "Inter", sans-serif;
+	h2 {
+		margin-bottom: 20px;
+	}
+	hr {
+		margin: 15px 0;
+	}
+	.price {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+.form {
+	height: 200px;
+	position: relative;
+	:global {
+		.ant-form {
+			height: 700px;
+		}
+		.ant-row {
+			height: 50px;
+			display: flex;
+			.ant-col {
+				display: block;
+				text-align: left;
+				margin: 0;
+				.ant-form-item-explain-error {
+					font-size: 14px;
+					margin-bottom: 20px;
+				}
+				.ant-form-item-control-input-content {
+					display: flex;
+					text-align: center;
+					.ant-btn {
+						position: absolute;
+						bottom: -20px;
+						display: block;
+						background-color: #e52e6b;
+						color: white;
+						margin-right: 20px;
+					}
+					.ant-btn:hover {
+						color: white;
+						background-color: #e52e6ba0;
+						outline: none;
+						border: none;
+					}
+					textarea {
+						resize: none;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,74 @@
+.favorites {
+	margin: 20px 100px;
+	font-family: "Inter", sans-serif;
+
+	h1 {
+		border-bottom: 1px solid grey;
+		padding: 0 0 20px 0;
+		margin-bottom: 30px;
+	}
+	.voidText {
+		height: 200px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 30px;
+		color: grey;
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(3, 400px);
+		gap: 20px;
+
+		.card {
+			padding: 15px;
+			width: 400px;
+			display: flex;
+			box-shadow:
+				0 4px 16px rgba(6, 10, 13, 0.06),
+				0 1px 4px rgba(6, 10, 13, 0.08);
+			border-radius: 12px;
+			img {
+				width: 110px;
+				height: 130px;
+				margin-right: 40px;
+			}
+			.price {
+				font-size: 18px;
+				font-weight: bold;
+				margin-bottom: 10px;
+			}
+			a {
+				font-size: 16px;
+				line-height: 18px;
+				width: 200px;
+				height: 70px;
+				color: black;
+			}
+			p {
+				font-size: 14px;
+				line-height: 16px;
+				margin: 8px 0;
+			}
+
+			.removeBtn {
+				display: inline-block;
+			}
+			:global {
+				.ant-btn {
+					display: block;
+					margin-bottom: 2px;
+					background-color: #e52e6b;
+					color: white;
+				}
+				.ant-btn:hover {
+					outline: none;
+					border: none;
+					background-color: #e66e96;
+				}
+			}
+		}
+	}
+}

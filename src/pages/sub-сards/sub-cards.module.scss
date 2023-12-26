@@ -1,0 +1,74 @@
+.main {
+	display: flex;
+	padding: 20px;
+	position: relative;
+	font-family: "Inter", sans-serif;
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap: 10px;
+
+		.card {
+			position: relative;
+			width: 270px;
+			font-family: "Inter", sans-serif;
+			position: relative;
+			padding: 8px 10px;
+			border-radius: 5px;
+			height: 350px;
+			border: 1px solid rgb(186, 186, 180);
+			.like {
+				cursor: pointer;
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				border: none;
+				outline: none;
+				svg {
+					width: 25px;
+					height: 25px;
+				}
+			}
+			.like:hover {
+				color: red;
+			}
+			.name {
+				width: 250px;
+				margin: 10px 0;
+				font-weight: bolder;
+			}
+			.price {
+				font-size: 20px;
+				margin-bottom: 5px;
+			}
+			.monthPrice {
+				color: rgb(175, 165, 165);
+			}
+			.rating {
+				font-size: 16px;
+				font-weight: bold;
+			}
+			.cart {
+				width: 150px;
+				position: absolute;
+				left: calc(50% - 73px);
+				bottom: 10px;
+				background-color: rgb(215, 74, 74);
+				color: white;
+			}
+			.cart:hover {
+				color: white;
+				background-color: rgba(215, 74, 74, 0.478);
+			}
+
+			.imgBtn {
+				display: block;
+				margin-bottom: 100px;
+				img {
+					width: 80px;
+					height: 100px;
+				}
+			}
+		}
+	}
+}
